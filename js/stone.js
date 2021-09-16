@@ -8,7 +8,7 @@ class Stone{
         var stone_option = {
             restitution: 0.5
         }
-        this.body = Matter.Bodies.circle(x,y,w,h,stone_option);
+        this.body = Matter.Bodies.rectangle(x,y,w,h,stone_option);
         World.add(world,this.body);
     }
     show(){

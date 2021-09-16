@@ -15,11 +15,11 @@ function setup() {
   world = engine.world;
   frameRate(80);
   ground = new Base(windowWidth/2, windowHeight - 10, windowWidth,10);
-  leftWall = new Base(300,windowHeight/2, 600, 100);
-  rightWall = new Base(width - 300,windowHeight/2, 600, 100);
+  leftWall = new Base(100,windowHeight/2, 300, 100);
+  rightWall = new Base(width - 100,windowHeight/2, 600, 100);
 
-  joinPoint = new Base(width - 500, height/2, 40, 20)
-  bridge = new Bridge(15, {x:width/2, y:height/2});
+  joinPoint = new Base(width - 300, height/2, 40, 20)
+  bridge = new Bridge(17, {x:100, y:height/2});
   Matter.Composite.add(bridge.body,joinPoint);
   joinLink = new Link(bridge, joinPoint);
 
